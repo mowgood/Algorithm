@@ -1,17 +1,18 @@
 class Solution {
-    public int solution(long num) {
+    public int solution(int num) {
         int answer = 0;
+        long n = (long) num;
         
         for(int i=0; i<500; i++) {
-            if(num == 1) {
+            if(n == 1) {
                 return answer;
             }
                 
-            if(num%2 == 0) {
-                num /= 2;
+            if(n%2 == 0) {
+                n /= 2;
             } 
             else {
-                num = num * 3 + 1;
+                n = n * 3 + 1;
             }
             answer++;
         } 
